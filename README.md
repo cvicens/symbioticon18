@@ -2,6 +2,19 @@ Cookbook: https://banking-sandbox.starfinanz.de/ahoi/docs/cookbook/index.html
 API-Explorer: https://banking-sandbox.starfinanz.de/ahoi/docs/api/swagger-ui/index.html#!/resource/Access
 Sandbox-Manager: https://banking-sandbox.starfinanz.de/sandboxmanager/#/
 
+## Some commands...
+
+```
+
+docker build -t nodejs-10-symbioticon .
+
+s2i build https://github.com/cvicens/ahoi-nodejs-demo-app nodejs-10-symbioticon ahoi-nodejs-demo-app
+
+docker run -it --rm -v $(pwd):/tmp/shared nodejs-10-symbioticon /bin/bash
+
+```
+
+
 ## URLs
 
 Your starting point is the Red Hat Solution Explorer available at: https://tutorial-web-app-webapp.symbioticon.opentry.me
